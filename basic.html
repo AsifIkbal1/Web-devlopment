@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -9,22 +9,30 @@
 </head>
 <body>
 
-<!-- Bootstrap Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<!-- Theme Toggle -->
+<div class="theme-toggle text-end p-2">
+  <button id="theme-btn" class="btn btn-sm btn-light">☀️</button>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Md Asif Ikbal</a>
   </div>
 </nav>
 
-<header class="text-center">
-  <h1>Md Asif Ikbal</h1>
+<header class="text-center py-4">
+  <h1><span class="type-effect"></span></h1>
   <p>Student | Programmer | Dreamer</p>
 </header>
+
+<!-- Scroll to top button -->
+<button onclick="scrollToTop()" id="topBtn" title="Go to top">⬆️</button>
 
 <section class="profile-section container">
   <div class="row align-items-center text-center text-lg-start">
     <div class="col-lg-4">
-      <img src="https://scontent.fjsr11-1.fna.fbcdn.net/v/t39.30808-6/481259767_2445431172469771_5271805334295021603_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeEJX2XlMriaIRSWNtmryoVZjd0PDUHF6bWN3Q8NQcXptTzwMpdwQCBXaGMYlGFRTngobVRShVG03TrWtTe1ZuI9&_nc_ohc=9JsQshNPrScQ7kNvwEK7hpQ&_nc_oc=AdmrflplmbfRTpujwLBozhio-YdVfL8UO8zfIVGmnEtmIa2Gm2o2BNUhziWr_cl1ZTE&_nc_zt=23&_nc_ht=scontent.fjsr11-1.fna&_nc_gid=hFMfiP5Q5o6I55M_y139Kg&oh=00_AfKsxbWMcBWSWEUDVCt_JLHnIQpX4-KWhAtIgu2wMkD_Dw&oe=68440EA1" alt="Md Asif Ikbal" class="profile-pic img-fluid mb-3"/>
+      <img src="https://i.ibb.co/FJ4hSnj/asif.jpg" alt="Md Asif Ikbal" class="profile-pic img-fluid mb-3"/>
     </div>
     <div class="col-lg-8">
       <h2>About Me</h2>
@@ -46,38 +54,36 @@
 
 <section class="education-section container text-center">
   <h2>🎓 Education</h2>
-  <div class="table-responsive">
-    <table class="table table-bordered table-striped text-light">
-      <thead class="table-info text-dark">
-        <tr>
-          <th>Exame name</th>
-          <th>College/University</th>
-          <th>Group</th>
-          <th>Passing Year</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>SSC</td>
-          <td>Gaibandha Gov High school</td>
-          <td>Science</td>
-          <td>2017</td>
-        </tr>
-        <tr>
-          <td>Diploma in Computer Science</td>
-          <td>Dinajpur Polytechnic Institute</td>
-          <td>Computer Science</td>
-          <td>2020</td>
-        </tr>
-        <tr>
-          <td>B.Sc. in Computer Science</td>
-          <td>Daffodil International University</td>
-          <td>Computer Science</td>
-          <td>2026</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+  <table class="table table-bordered table-striped text-light table-responsive">
+    <thead class="table-info text-dark">
+      <tr>
+        <th>Exam Name</th>
+        <th>College/University</th>
+        <th>Group</th>
+        <th>Passing Year</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>SSC</td>
+        <td>Gaibandha Gov High School</td>
+        <td>Science</td>
+        <td>2017</td>
+      </tr>
+      <tr>
+        <td>Diploma</td>
+        <td>Dinajpur Polytechnic Institute</td>
+        <td>Computer Science</td>
+        <td>2020</td>
+      </tr>
+      <tr>
+        <td>B.Sc.</td>
+        <td>Daffodil International University</td>
+        <td>Computer Science</td>
+        <td>2026</td>
+      </tr>
+    </tbody>
+  </table>
 </section>
 
 <section class="contact-form-section container">
@@ -105,5 +111,6 @@
   🌐 <a href="https://www.facebook.com/asifikbalmamun220/" target="_blank">Facebook</a>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>

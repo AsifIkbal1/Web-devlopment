@@ -1,8 +1,11 @@
-/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -10,9 +13,14 @@ body {
   color: #ffffff;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
+  transition: all 0.3s ease;
 }
 
-/* Header */
+[data-theme="light"] body {
+  background-color: #ffffff;
+  color: #000000;
+}
+
 header {
   background-color: #1f2833;
   padding: 30px 20px;
@@ -24,12 +32,6 @@ header h1 {
   color: #66fcf1;
 }
 
-header p {
-  font-size: 1.1rem;
-  color: #c5c6c7;
-}
-
-/* Profile */
 .profile-pic {
   width: 160px;
   height: 160px;
@@ -38,53 +40,26 @@ header p {
   box-shadow: 0 0 15px #45a29e;
 }
 
-.intro h2 {
-  color: #66fcf1;
-  margin-bottom: 10px;
-}
-
-/* Roles */
-.skills-container h2 {
-  color: #66fcf1;
-  margin-bottom: 20px;
-}
-
-.box {
+.skills-container .box {
   background-color: #1f2833;
-  padding: 15px 25px;
+  padding: 15px;
   border-radius: 10px;
   font-weight: bold;
   color: #66fcf1;
-  box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
   transition: transform 0.3s;
-  text-align: center;
 }
 
-.box:hover {
+.skills-container .box:hover {
   transform: scale(1.05);
 }
 
-/* Education */
-.education-section h2 {
-  color: #66fcf1;
-  margin-bottom: 20px;
-}
-
-/* Contact Form */
 .contact-form-section {
   background-color: #1f2833;
   padding: 30px 20px;
-  margin-top: 30px;
   border-radius: 10px;
-  box-shadow: 0 0 15px rgba(102, 252, 241, 0.3);
+  margin-top: 30px;
 }
 
-.contact-form-section h2 {
-  color: #66fcf1;
-  margin-bottom: 20px;
-}
-
-/* Footer */
 footer a {
   color: #66fcf1;
   text-decoration: none;
@@ -92,4 +67,18 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+
+#topBtn {
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  background-color: #66fcf1;
+  color: black;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  display: none;
+  z-index: 1000;
+  font-size: 20px;
 }
